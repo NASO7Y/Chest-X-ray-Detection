@@ -1,0 +1,24 @@
+model-1: Mobile-net
+--------------------
+Validation: Precision: 0.8718, Recall: 0.8740, Accuracy: 0.87
+Testing: Precision: 0.8862, Recall: 0.8869, Accuracy: 0.89
+
+
+model-2: Resnet-50
+-------------------
+Validation: Precision: 0.8104, Recall: 0.8021 , Accuracy: 0.80
+Testing: Precision: 0.8196, Recall: 0.8044 , Accuracy: 0.80
+
+
+model-3: Efficient-net
+-------------------
+Validation: Precision: 0.8995, Recall: 0.8973 , Accuracy: 0.90
+Testing: Precision: 0.8956, Recall: 0.8919 , Accuracy: 0.89
+
+
+
+model-4: YOLO-V11-Small Version
+-------------------
+Validation: Accuracy: 0.9131
+Testing: Accuracy: 0.913
+
