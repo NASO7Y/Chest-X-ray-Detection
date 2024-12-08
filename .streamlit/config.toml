@@ -1,0 +1,8 @@
+[client]
+showErrorDetails = false
+
+[theme]
+base = "dark"
+
+[server]
+maxUploadSize = 25
