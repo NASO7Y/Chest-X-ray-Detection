@@ -1,4 +1,4 @@
-# Chest X-ray Detection 🫁  
+# Chest X-ray Detection 🫁
 
 This project is a **Chest X-ray Detection** web application developed using **Streamlit** and **YOLO**. The app allows users to upload chest X-ray images and performs real-time predictions using a pre-trained YOLO model. The result includes the predicted label and the associated probability.
 
@@ -8,6 +8,37 @@ This project is a **Chest X-ray Detection** web application developed using **St
 - **Upload & Predict**: Upload X-ray images in `jpg`, `png`, or `jpeg` formats.
 - **Model Predictions**: Detect chest conditions with YOLO and display the prediction with confidence.
 - **Interactive Interface**: Built using Streamlit for an intuitive and user-friendly experience.
+
+---
+
+## About the Dataset
+The dataset used in this project consists of chest X-ray images prepared by combining multiple publicly available datasets. Special care was taken to ensure the dataset's integrity by removing duplicate images using a tool called **VisiPics**.
+
+### Classes
+The dataset is organized into the following classes:
+
+1. **Normal Lungs:** Images showing healthy lung conditions.
+2. **Diseased Lungs:** Divided into four categories representing various lung diseases:
+   - Bacterial Pneumonia
+   - Corona Virus Disease (COVID-19)
+   - Tuberculosis
+   - Viral Pneumonia
+
+### Data Augmentation
+To improve the dataset's balance and enhance the model's generalization capabilities, data augmentation was applied with a factor of 6. This process included:
+- **Rotations**
+- **Flipping** (horizontal and/or vertical)
+- **Contrast Adjustments**
+
+The augmentation increased the dataset size to approximately **10,000 images**, ensuring sufficient variability for training deep learning models while retaining the original dataset's essence.
+
+### Dataset Structure
+The dataset is divided into three subsets:
+1. **Training Set:** Used to train the deep learning model.
+2. **Validation Set:** Used during training to evaluate the model's performance and fine-tune hyperparameters.
+3. **Test Set:** Used to assess the model's final performance on unseen data.
+
+This dataset serves as a comprehensive collection for training, validating, and testing deep learning models for lung disease classification tasks.
 
 ---
 
@@ -100,5 +131,4 @@ pip install -r requirements.txt
 Contributions are welcome! Feel free to fork the repository and submit a pull request.
 
 ---
-
 Happy detecting! 🫁
